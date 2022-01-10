@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--=============== D3 ===============-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!--=============== PLOTLY ===============-->
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <title>Joseph Chancey - Portfolio</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-line-chart-fill nav__logo-icon"></i> Joseph Chancey
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section id="home">
+            <section class="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home_me.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Joseph Chancey <br> Data Analyst
+                        </h1>
+                        <p class="home__description">
+                            Placeholder text. Placeholder text.
+                            Placeholder text. Placeholder text.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            <i class="ri-arrow-right-line button__icon"></i> Download CV
+                        </a>
+                        <a href="#contact" class="button button--flex">
+                            <i class="ri-mail-send-line button__icon"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Me</span>
+
+                        <div class="home__social-links">
+                            <a href="https://github.com/josephchancey" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joseph-chancey" target="_blank"
+                                class="home__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/josephchancey" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/josephchancey" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container">
+                <div class="about__container grid">
+
+                    <div id="pltDiv" class="about__data">
+                        <!-- <img src="assets/img/about.png" alt="" class="about__img"> -->
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title">
+                            Data Driven Decisions
+                        </h2>
+
+                        <p class="about__description">
+                            Placeholder text. Placeholder text. Placeholder text.
+                            Placeholder text. Placeholder text. Placeholder text.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                                Extract, Transform, Load.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                                Stakeholder Communication.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                                Actionable Recommendations.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                                User Segmentation, Quantitative Analysis, Funnel Optimization.
+                            </p>
+                        </div>
+
+                        <a href="#products" class="button button--flex">
+                            Jump to Projects <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- ============== EDUCATION ================== -->
+        <section class="about section container" id="education">
+            <h2 class="section__title-center">
+                Education
+            </h2>
+            <br>
+            <div class="about__container">
+
+                <!-- <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Modesto Junior College
+                        </h2>
+                        <h3 class="text-muted">A.A.-T History</h3>
+
+                        <p class="about__description">
+                            We have over 4000+ unbiased reviews and our customers 
+                            trust our plant process and delivery service every time
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+                    </div> -->
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        California State University, <br>Stanislaus
+                    </h2>
+                    <h3 class="text-muted">Bachelor of Arts - History</h3>
+
+                    <p class="about__description">
+                        My degree in history allows me to tackle data with
+                        a keen eye for spotting biases. I have the ability to look at problems
+                        with an understanding of multiple perspectives, backgrounds, and cultures.
+                        Studying history has taught me how to effectively research, synthesize, and communicate
+                        information.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Vice President & Event Coordinator for campus Phi Alpha Theta chapter <i>(History Honor
+                                Society)</i>
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Research & Information Synthesization
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Completed Computer Programming I & II (C++, Java, JavaScript)
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Completed Data Structures & Algorithms
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Analytical & Critical Thinking Strategies
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Refined Presentation Skills & Communication Strategies
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Academic Emphasis on American Diversity, Civil Rights, & Economic History
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        University of California, <br> Davis
+                    </h2>
+                    <h3 class="text-muted">Bootcamp Certificate - Data Analytics <br> <i>Continuing & Professional
+                            Education</i></h3>
+
+                    <p class="about__description">
+
+
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            SQL, PostgreSQL | Data Analysis & Engineering
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Python (Pandas, Matplotlib, Seaborn, sklearn, SQLalchemy, NumPy, SciPy)
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Python Data Collection (BeautifulSoup, Splinter, E.T.L. Strategies)
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Flask Web Application & Dashboarding
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            JavaScript Visualization Libraries (Plotly, D3, Leaflet, Chart)
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Python Supervised & Unsupervised Machine Learning (tensorflow, sklearn)
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Statistical Modeling, Data Collection, Data Optimization
+                        </p>
+                        <a href="https://www.credly.com/badges/6d5def2d-2289-48ab-acac-1eb5098655f5?source=linked_in_profile"
+                            target="_blank" class="button--link">
+                            <p class="about__details-description">
+                                See Certificate <i class="ri-arrow-right-up-line button__icon"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--==================== CERTS ====================-->
+            <!-- <br>
+            <section class="steps container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Professional Certificates
+                    </h2>
+                    <a href="#" class="button--link">
+                        <div class="steps__container grid">
+                            <div class="steps__card">
+                                <div class="steps__card-number">Coursera</div>
+                                <h3 class="steps__card-title">Google Data Analytics</h3>
+                                <p class="steps__card-description">
+                                    <br> See Certificate  <i class="ri-arrow-right-up-line button__icon"></i>
+                                </p>
+
+                            </div>
+                    </a>
+                    <a href="#" class="button--link">
+                        <div class="steps__card">
+                            <div class="steps__card-number">Coursera</div>
+                            <h3 class="steps__card-title">Google Project Management</h3>
+                            <p class="steps__card-description">
+                                See Certificate  <i class="ri-arrow-right-up-line button__icon"></i>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="button--link">
+                        <div class="steps__card">
+                            <div class="steps__card-number">Coursera</div>
+                            <h3 class="steps__card-title">Facebook Marketing Analytics</h3>
+                            <p class="steps__card-description">
+                                See Certificate <i class="ri-arrow-right-up-line button__icon"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Certificates of Completion
+                    </h2>
+                    <a href="#" class="button--link">
+                        <div class="steps__container grid">
+                            <div class="steps__card">
+                                <div class="steps__card-number">Codecademy</div>
+                                <h3 class="steps__card-title">Analyze Data with SQL</h3>
+                                <p class="steps__card-description">
+                                    See Certificate <i class="ri-arrow-right-up-line button__icon"></i>
+                                </p>
+
+                            </div>
+                    </a>
+                    <a href="#" class="button--link">
+                        <div class="steps__card">
+                            <div class="steps__card-number">Codecademy</div>
+                            <h3 class="steps__card-title">Data Analyst</h3>
+                            <p class="steps__card-description">
+                                See Certificate <i class="ri-arrow-right-up-line button__icon"></i>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="button--link">
+                        <div class="steps__card">
+                            <div class="steps__card-number">Datacamp</div>
+                            <h3 class="steps__card-title">Data Scientist</h3>
+                            <p class="steps__card-description">
+                                See Certificate <i class="ri-arrow-right-up-line button__icon"></i>
+                            </p>
+                        </div>
+                    </a>
+
+
+                </div>
+            </section>-->
+        </section>
+
+        <!--=============== SKILLS ================== -->
+        <section class="questions about section" id="skills">
+            <h2 class="section__title-center" style="margin-top: -35px;">
+                Skills
+            </h2>
+            <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                SQL Data Analysis
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Advanced knowledge on SQL analytical strategies.
+                                Querying, Subquerying, Aggregation.
+                                All providing the ability to assess user churn, usage funnel optimization, user
+                                attribution, etc...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Python Data Analysis
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Specifically trained in the following for Pythonic Data Analysis: Pandas,
+                                Matplotlib, Seaborn, SQLalchemy, BeautifulSoup, & Plotly.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Tableau / Power BI
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Skill Description
+                                Here.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Statistical Analysis / Regressions
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Firm grasp on statistics and Python mathematics libraries (SciPy, NumPy).
+                                Using python to create linear regression functions. Find correlation coefficient,
+                                confidence intervals,
+                                standard error, etc...
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Flask Web Applications
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Back-end development with Flask for web dashboarding.
+                                Automated web apps that run Python scripts to extract, transform, and load
+                                data into a SQL/noSQL database to be presented on the website.
+                                Capable of full-stack web development (see projects for examples).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                JavaScript Plots
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Skill Description
+                                Here.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Data Collection, Transformation, Loading
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Skill Description
+                                Here.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Communication & Presentation
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Skill Description
+                                Here.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== WORK EXPERIENCE ================== -->
+        <section class="about section container" id="work">
+            <h1 class="section__title-center">
+                Work Experience
+            </h1>
+            <br>
+            <div class="about__container">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Student Assistant & Event Organizer
+                    </h2>
+                    <h3 class="text-muted">California State University, Stanislaus | 2021</h3>
+
+                    <p class="about__description">
+                        Description
+                        Here.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            In charge of coordinating honor society events and maintaining technical support.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Create flyers and PowerPoint presentations with the Adobe Suite for sponsored events.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            I became the Vice President & Event Coordinator for our chapter after working in this
+                            position.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Laboratory Assistant & Analyst
+                    </h2>
+                    <h3 class="text-muted">Modesto Junior College | 2019-2020</h3>
+
+                    <p class="about__description">
+                        Description
+                        Here.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Database management and transformation for the Anthropology department.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Created a web dashboard with SQL database to store the data of the private specimen
+                            collection.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Worked with human skeletal remains and primate skeletal remains in a lab setting.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Created specimen documentation for database entry whilst maintaining elaborate record
+                            keeping and data management practices.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Performed many other clerical duties
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Full Stack Developer & Data Analyst
+                    </h2>
+                    <h3 class="text-muted">RC Lynx Hobby Shop | 2019-2020</h3>
+
+                    <p class="about__description">
+                        Description
+                        Here.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Created company eCommerce website running on Magento 2.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Analyzed consumer data to improve web features.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Practice funnel optimiztion and assess user acquisition strategies.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Analyze data collection methods for inefficiencies.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Use Adobe Creative Suite for front-end web development and design.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Management of 5,000+ product SQL database.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Independent Study for Higher Education Teaching
+                    </h2>
+                    <h3 class="text-muted">Modesto Junior College | 2018</h3>
+
+                    <p class="about__description">
+                        Description
+                        Here.
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Six month research project regarding colonial U.S. History.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Presented research before instructor's lecture hall (150 Students).
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Practice with communication methods and synthesizing information.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Practice higher education teaching methodologies.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-blank-circle-fill about__details-icon"></i>
+                            Student tutor & examniation proctor.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+<!-- Maybe make projects a modal? -->
+<!-- https://www.youtube.com/watch?v=27JtRAI3QO8&t=299s 1:29:04 -->
+<section class="portfolio section" id="products">
+    <h2 class="section__title-center">My Projects</h2>
+
+    <div class="portfolio__container container swiper" style="padding-top: 20px;">
+        <div class="swiper-wrapper">
+
+
+            <!-- Slide 1 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card1.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+
+
+            <!-- Slide 2 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card2.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+            <!-- Slide 3 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card3.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+            <!-- Slide 4 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card4.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="padding-top: 25px;"></div>
+
+    </div>
+
+</section>
+
+
+<!--
+
+    COPY
+
+-->
+
+
+<section class="portfolio section" id="products">
+    <h2 class="section__title-center">My Projects</h2>
+
+    <div class="portfolio__container container swiper" style="padding-top: 20px;">
+        <div class="swiper-wrapper">
+
+
+            <!-- Slide 1 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card1.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+
+
+            <!-- Slide 2 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card2.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+            <!-- Slide 3 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card3.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+            <!-- Slide 4 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/card4.png" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">California Wildfire ML App</h3>
+                    <p class="portfolio__description">Utilize unsupervised machine learning to determine if wildfire burn acreage in California can be accurately p
+                        redicted by the amount of precipitation or the severity of drought. We collected data from CALFIRE and Natio
+                        nal Oceanic and Atmospheric Administration (NOAA) that included historic datapoints for wildfires, drought conditions, and precip
+                        itation by county in California.   itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California  itation by county in California
+                        itation by county in California  itation by county in California  itation by county in California  itation by county in California</p>
+                        <div style="text-align: center;">
+                    <a href="#" class="button button--flex">GitHub <i class="ri-github-fill button__icon"></i></a>
+                </div>
+                </div>
+            </div>
+            <!-- Slide END -->
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="padding-top: 25px;"></div>
+
+    </div>
+
+</section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                        Want to Contact Me? <br> Lets Work Together! <br>
+                    </h2>
+
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Phone </h3>
+                            <a href="tel:2093452504" class="contact__description">
+                                <i class="ri-phone-line contact__icon"></i>
+                                +1 (209) 345-2504
+                            </a>
+                        </div>
+
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Email </h3>
+                            <a href="mailto: josephchancey11@gmail.com" class="contact__description">
+                                <i class="ri-mail-line contact__icon"></i>
+                                josephchancey11@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Social </h3>
+                            <div class="home__social-links-contact">
+                                <a href="https://github.com/josephchancey" target="_blank"
+                                    class="home__social-link-contact">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/joseph-chancey" target="_blank"
+                                    class="home__social-link-contact">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+                                <a href="https://www.instagram.com/josephchancey" target="_blank"
+                                    class="home__social-link-contact">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://twitter.com/josephchancey" target="_blank"
+                                    class="home__social-link-contact">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex">
+                        Send Email
+                        <i class="ri-mail-send-line button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="section footer">
+        <br>
+        <h2 class="section__title-center" style="padding-top: 100px; padding-bottom: 175px;">
+            Thank You!
+        </h2>
+        <br>
+        <p class="footer__copy">&#169; Joseph Chancey. All rigths reserved</p>
+    </footer>
+
+
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+    <script>
+        let swiper = new Swiper(".portfolio__container", {
+          cssMode: true,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== PLOTS ===============-->
+    <script src="assets/js/plots.js"></script>
+
+    <!--BS4 JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>
